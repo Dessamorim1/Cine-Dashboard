@@ -19,7 +19,6 @@ const devContent = `export const environment = {
   API_KEY_TMB: '${API_KEY_TMB}'
 };`;
 
-// conteúdo do production
 const prodContent = `export const environment = {
   production: true,
   BACK4APP_APP_ID: '${BACK4APP_APP_ID}',
@@ -30,4 +29,5 @@ const prodContent = `export const environment = {
 fs.writeFileSync(path.join(envDir, 'environment.development.ts'), devContent);
 fs.writeFileSync(path.join(envDir, 'environment.production.ts'), prodContent);
 
-console.log('environment.development.ts e environment.production.ts gerados');
+console.log('environment.development.ts e environment.production.ts gerados com sucesso!');
+
